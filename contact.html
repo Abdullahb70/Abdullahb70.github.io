@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="py-3 px-5 d-flex justify-content-between align-items-center border-bottom">
+        <div class="logo">Abdullah Boukich</div>
+
+        <nav class="d-flex gap-4">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">Over mij</a>
+            <a href="projecten.html">Projecten</a>
+            <a href="skills.html">Vaardigheden</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="text-center py-5">
+        <h1 class="text-success">Neem Contact Op</h1>
+        <div class="mx-auto my-2" style="width:70px;height:3px;background:#10b981;"></div>
+        <p class="text-light">Stuur me een bericht!</p>
+    </section>
+    
+    <div class="container pb-5">
+
+        <div class="row g-4">
+
+            <!-- FORMULIER -->
+            <div class="col-md-5">
+                <div class="kaart p-4" style="background:#111a2e;border-radius:12px;border:1px solid #1f2a3c;">
+                    <h2 class="mb-4">Stuur een bericht</h2>
+
+                    <label>Naam</label>
+                    <input type="text" class="form-control mb-3" placeholder="Je naam">
+
+                    <label>Email</label>
+                    <input type="email" class="form-control mb-3" placeholder="je@email.com">
+
+                    <label>Bericht</label>
+                    <textarea class="form-control mb-3" rows="5" placeholder="Je bericht..."></textarea>
+
+                    <button class="btn primary w-100">Verstuur bericht</button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="kaart p-4" style="background:#111a2e;border-radius:12px;border:1px solid #1f2a3c;">
+
+                    <div class="info-box mb-4">
+                        <strong>Email</strong><br>
+                        abdullah@example.com
+                    </div>
+
+                    <div class="info-box mb-4">
+                        <strong>Telefoon</strong><br>
+                        +31 6 12345678
+                    </div>
+
+                    <div class="info-box mb-4">
+                        <strong>Locatie</strong><br>
+                        Nederland
+                    </div>
+
+                    <div class="info-box mb-4">
+                        <strong>Beschikbaarheid</strong><br>
+                        Ik ben beschikbaar voor kleine projecten.
+                        <div class="status mt-2" style="color:#10b981;font-weight:bold;">
+                            ● Beschikbaar voor projecten
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
