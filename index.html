@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Abdullah | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome (voor iconen) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Jouw eigen CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Abdullahb70</h1>
+
+<!-- NAVBAR -->
+<header class="navbar d-flex justify-content-between align-items-center px-5 py-3">
+    <div class="logo">Abdullah Boukich</div>
+
+    <nav class="d-flex gap-4">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">Over Mij</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="skills.html">Vaardigheden</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero container py-5">
+    <div class="row align-items-center">
+
+        <!-- Linkerkant -->
+        <div class="col-md-6 hero-left">
+            <span class="badge">Welkom op mijn portfolio</span>
+
+            <h1>Abdullah Boukich</h1>
+            <h2>Junior Web Developer</h2>
+
+            <p>
+                Ik ben een beginnende developer die websites en games
+                maakt met HTML, CSS en JavaScript. Ik leer elke dag nieuwe dingen!
+            </p>
+
+            <div class="d-flex gap-3 mb-4">
+                <a href="projecten.html" class="btn primary">Bekijk mijn projecten</a>
+                <a href="contact.html" class="btn secondary">Contact</a>
+            </div>
+
+            <div class="socials d-flex">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+
+        <!-- Rechterkant -->
+        <div class="col-md-6 hero-right mt-4 mt-md-0">
+            <div class="code-card mx-auto">
+                <img src="img/home.png" alt="Portfolio afbeelding" class="img-fluid rounded">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
