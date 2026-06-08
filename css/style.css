@@ -1,127 +1,222 @@
-/* BASIS */
-* {
+/* -----------------------------------
+   ALGEMENE BASIS
+----------------------------------- */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+    background: #0b1120;
+    font-family: Arial, sans-serif;
+    color: #cfd5e1;
 }
 
-body {
-    background: radial-gradient(circle at right, #0f766e, #020617 70%);
-    color: #fff;
-}
-
-/* NAVBAR */
-header {
-    background: transparent;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #10b981;
-}
-
-nav a {
+a {
     text-decoration: none;
-    color: #e5e7eb;
-    font-size: 15px;
 }
 
-nav a:hover {
+/* -----------------------------------
+   NAVBAR
+----------------------------------- */
+header {
+    background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: 700;
     color: #10b981;
 }
 
-/* HERO */
-.badge {
-    display: inline-block;
-    background: rgba(16, 185, 129, 0.15);
-    color: #34d399;
-    padding: 8px 18px;
-    border-radius: 999px;
-    font-size: 14px;
-    margin-bottom: 25px;
-}
-
-.hero-left h1 {
-    font-size: 64px;
-    font-weight: 800;
-}
-
-.hero-left h2 {
-    font-size: 28px;
+header nav a {
+    color: #cfd5e1;
     font-weight: 500;
-    color: #cbd5f5;
-    margin-bottom: 20px;
+    transition: .2s;
 }
 
-.hero-left p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #d1d5db;
-    margin-bottom: 30px;
+header nav a:hover {
+    color: #10b981;
 }
 
-/* BUTTONS */
-.btn.primary {
-    background: #10b981;
-    color: #020617;
+header nav .active {
+    color: #10b981;
     font-weight: 600;
-    border-radius: 10px;
-    padding: 14px 26px;
 }
 
-.btn.primary:hover {
+/* -----------------------------------
+   TITELS & ONDERLIJN
+----------------------------------- */
+h1, h2, h3 {
+    color: #10b981;
+}
+
+.underline, .lijn {
+    width: 70px;
+    height: 3px;
+    background: #10b981;
+    margin: 10px auto;
+}
+
+/* -----------------------------------
+   BUTTONS
+----------------------------------- */
+.btn {
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn.green {
+    background: #10b981;
+    color: #0b1120;
+}
+
+.btn.green:hover {
     background: #34d399;
 }
 
-.btn.secondary {
-    background: #fff;
-    color: #020617;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 14px 26px;
+.btn.dark {
+    background: #1e293b;
+    color: #cfd5e1;
 }
 
-/* SOCIAL ICONS */
-.socials i {
+.btn.dark:hover {
+    background: #334155;
+}
+
+/* -----------------------------------
+   PROJECT CARDS
+----------------------------------- */
+.card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.25);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.tags span {
+    background: #1e293b;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+/* -----------------------------------
+   SKILLS PAGE
+----------------------------------- */
+.skill-card {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.25);
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+}
+
+.skill-icon {
     font-size: 22px;
-    margin-right: 18px;
-    color: #9ca3af;
+    color: #10b981;
+    margin-right: 8px;
+}
+
+.bar {
+    width: 100%;
+    height: 12px;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.bar div {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    border-radius: 10px;
+    animation: fill 1.2s ease-out;
+}
+
+@keyframes fill {
+    from { width: 0; }
+    to { width: inherit; }
+}
+
+/* -----------------------------------
+   CONTACT PAGE
+----------------------------------- */
+.kaart {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background: #1e293b;
+    border: none;
+    border-radius: 8px;
+    color: #cfd5e1;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #10b981;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
 }
 
-.socials i:hover {
-    color: #10b981;
+button:hover {
+    background: #34d399;
 }
 
-/* CODE CARD */
-.code-card {
-    background: #020617;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 60px rgba(16, 185, 129, 0.4);
-}
-
-.code-card img {
-    width: 100%;
-    border-radius: 14px;
-}
-
-/* OVER MIJ */
-.about h2 {
-    color: #10b981;
-}
-
-.about-text {
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+.footer {
+    background: #0f172a;
+    border-top: 1px solid #1e293b;
     color: #cfd5e1;
-    line-height: 1.7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
 }
 
-.card {
-    background: #111a2e;
-    border: 1px solid #1f2a3c;
-    border-radius: 10px;
-    padding: 20px;
-    color: #cfd5e1;
+.footer p {
+    margin: 0;
+    padding: 3px;
+    font-size: 14px;
 }
