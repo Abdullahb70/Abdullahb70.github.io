@@ -13,61 +13,104 @@
 
 <body>
 
-<header class="py-3 px-5 d-flex justify-content-between align-items-center">
-        <div class="logo">Abdullah Boukich</div>
+<header class="navbar sticky-top">
+    <nav class="navbar-expand-lg w-100">
+        <div class="container-fluid px-5">
+            <div class="navbar-brand logo">Abdullah Boukich</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-4">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="aboutme.html">Over mij</a>
+                    <a class="nav-link" href="projecten.html">Projecten</a>
+                    <a class="nav-link" href="skills.html">Vaardigheden</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-        <nav class="d-flex gap-4">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">Over mij</a>
-            <a href="projecten.html">Projecten</a>
-            <a href="skills.html">Vaardigheden</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <!-- TITLE SECTION -->
+    <section class="text-center py-5 mb-5">
+        <h1 class="mb-3">Over Mij</h1>
+        <span class="underline d-block mx-auto mb-3"></span>
+        <p class="text-light lead">Leer mij kennen — Een passionerende junior developer</p>
+    </section>
 
     <section class="about container py-5">
-        <h2 class="text-center mb-5">Over Mij</h2>
+        <div class="row g-5 align-items-center">
 
-        <div class="row g-4">
-
-            <div class="col-md-6">
+            <!-- ABOUT TEXT -->
+            <div class="col-lg-6">
                 <div class="about-text">
-                    <p>
-                        Hoi! Ik ben Abdullah en ik ben een paar maanden geleden begonnen <br>
-                        met leren programmeren. Ik vind het super leuk om websites en <br>
+                    <h3 class="mb-4 text-success">Wie ben ik?</h3>
+                    
+                    <p class="mb-3 text-light">
+                        Hoi! Ik ben Abdullah en ik ben een paar maanden geleden begonnen 
+                        met leren programmeren. Ik vind het super leuk om websites en 
                         games te maken!
                     </p>
-                    <br>
 
-                    <p>
-                        Ik ken HTML, CSS en JavaScript. Ook kan ik werken met GitHub <br>
-                        om mijn projecten op te slaan.
+                    <p class="mb-3 text-light">
+                        Ik ben zeer gepassioneerd over webdevelopment en doe mijn best om 
+                        elke dag iets nieuws te leren. Ik werk met moderne technologieën 
+                        en probeer altijd schone, professionele code te schrijven.
                     </p>
-                    <br>
 
-                    <p>
-                        Mijn doel is om een goede developer te worden en nog veel meer <br>
-                        te leren. Ik ben super gemotiveerd!
+                    <p class="mb-4 text-light">
+                        Mijn doel is om een getalenteerde developer te worden en impact te 
+                        maken met mijn projecten. Ik ben altijd open voor feedback en 
+                        samenwerkingskansen!
                     </p>
+
+                    <a href="contact.html" class="btn btn-primary primary">Neem contact op</a>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <!-- SKILLS CARDS -->
+            <div class="col-lg-6">
                 <div class="d-flex flex-column gap-3">
 
-                    <div class="card p-3">
-                        <h3>&lt;/&gt; HTML, CSS & JavaScript</h3>
-                        <p>Ik kan websites maken met deze talen.</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fas fa-code text-success" style="font-size:28px;"></i>
+                                <h5 class="card-title mb-0">Web Development</h5>
+                            </div>
+                            <p class="card-text text-light">
+                                Ik kan websites maken met HTML, CSS en JavaScript. 
+                                Ook ervaring met Bootstrap en Git.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="card p-3">
-                        <h3>Creatief Denken</h3>
-                        <p>Ik bedenk leuke ideeën voor websites en games.</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fas fa-lightbulb text-success" style="font-size:28px;"></i>
+                                <h5 class="card-title mb-0">Creatief Denken</h5>
+                            </div>
+                            <p class="card-text text-light">
+                                Ik bedenk innovative ideeën voor websites en games. 
+                                Design en functionaliteit gaan hand in hand.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="card p-3">
-                        <h3>Altijd Leren</h3>
-                        <p>Elke dag leer ik nieuwe dingen.</p>
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fas fa-graduation-cap text-success" style="font-size:28px;"></i>
+                                <h5 class="card-title mb-0">Voortdurend Leren</h5>
+                            </div>
+                            <p class="card-text text-light">
+                                Elke dag leer ik nieuwe dingen. Ik ben gemotiveerd 
+                                en ambiteus in mijn groei als developer.
+                            </p>
+                        </div>
                     </div>
 
                 </div>

@@ -13,23 +13,34 @@
 
 <body>
 
-<header class="py-3 px-5 d-flex justify-content-between align-items-center">
-        <div class="logo">Abdullah Boukich</div>
+<header class="navbar sticky-top">
+    <nav class="navbar-expand-lg w-100">
+        <div class="container-fluid px-5">
+            <div class="navbar-brand logo">Abdullah Boukich</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-4">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="aboutme.html">Over mij</a>
+                    <a class="nav-link" href="projecten.html">Projecten</a>
+                    <a class="nav-link active" href="skills.html">Vaardigheden</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
-        <nav class="d-flex gap-4">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">Over mij</a>
-            <a href="projecten.html">Projecten</a>
-            <a class="active" href="skills.html">Vaardigheden</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <!-- TITLE SECTION -->
+    <section class="text-center py-5 mb-5">
+        <h1 class="mb-3">Mijn Vaardigheden</h1>
+        <span class="underline d-block mx-auto mb-3"></span>
+        <p class="text-light lead">Dit kan ik en dit ben ik aan het leren</p>
+    </section>
 
     <section class="skills container py-5">
-        <h2 class="text-center text-success">Mijn Vaardigheden</h2>
-        <p class="subtitle text-center">Dit kan ik en dit ben ik aan het leren</p>
-
-        <div class="row g-4 mt-4">
 
             <!-- FRONTEND -->
             <div class="col-md-4">

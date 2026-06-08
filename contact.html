@@ -12,22 +12,30 @@
 </head>
 
 <body>
-<header class="py-3 px-5 d-flex justify-content-between align-items-center">
-        <div class="logo">Abdullah Boukich</div>
-
-        <nav class="d-flex gap-4">
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">Over mij</a>
-            <a href="projecten.html">Projecten</a>
-            <a href="skills.html">Vaardigheden</a>
-            <a class="active" href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header class="navbar sticky-top">
+    <nav class="navbar-expand-lg w-100">
+        <div class="container-fluid px-5">
+            <div class="navbar-brand logo">Abdullah Boukich</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-4">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="aboutme.html">Over mij</a>
+                    <a class="nav-link" href="projecten.html">Projecten</a>
+                    <a class="nav-link" href="skills.html">Vaardigheden</a>
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <section class="text-center py-5">
-        <h1 class="text-success">Neem Contact Op</h1>
-        <div class="mx-auto my-2" style="width:70px;height:3px;background:#10b981;"></div>
-        <p class="text-light">Stuur me een bericht!</p>
+        <h1>Neem Contact Op</h1>
+        <span class="underline d-block mx-auto my-3"></span>
+        <p class="text-light lead">Stuur me een bericht!</p>
     </section>
     
     <div class="container pb-5">
@@ -35,48 +43,54 @@
         <div class="row g-4">
 
             <!-- FORMULIER -->
-            <div class="col-md-5">
-                <div class="kaart p-4" style="background:#111a2e;border-radius:12px;border:1px solid #1f2a3c;">
-                    <h2 class="mb-4">Stuur een bericht</h2>
+            <div class="col-lg-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Stuur een bericht</h5>
 
-                    <label>Naam</label>
-                    <input type="text" class="form-control mb-3" placeholder="Je naam">
+                        <label class="form-label">Naam</label>
+                        <input type="text" class="form-control mb-3" placeholder="Je naam">
 
-                    <label>Email</label>
-                    <input type="email" class="form-control mb-3" placeholder="je@email.com">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control mb-3" placeholder="je@email.com">
 
-                    <label>Bericht</label>
-                    <textarea class="form-control mb-3" rows="5" placeholder="Je bericht..."></textarea>
+                        <label class="form-label">Bericht</label>
+                        <textarea class="form-control mb-3" rows="5" placeholder="Je bericht..."></textarea>
 
-                    <button class="btn primary w-100">Verstuur bericht</button>
+                        <button class="btn btn-primary primary w-100">Verstuur bericht</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="kaart p-4" style="background:#111a2e;border-radius:12px;border:1px solid #1f2a3c;">
 
-                    <div class="info-box mb-4">
-                        <strong>Email</strong><br>
-                        abdullah@example.com
-                    </div>
+            <!-- CONTACTGEGEVENS -->
+            <div class="col-lg-7">
+                <div class="card h-100">
+                    <div class="card-body">
 
-                    <div class="info-box mb-4">
-                        <strong>Telefoon</strong><br>
-                        +31 6 12345678
-                    </div>
-
-                    <div class="info-box mb-4">
-                        <strong>Locatie</strong><br>
-                        Nederland
-                    </div>
-
-                    <div class="info-box mb-4">
-                        <strong>Beschikbaarheid</strong><br>
-                        Ik ben beschikbaar voor kleine projecten.
-                        <div class="status mt-2" style="color:#10b981;font-weight:bold;">
-                            ● Beschikbaar voor projecten
+                        <div class="info-box mb-4 pb-3 border-bottom">
+                            <strong class="text-success">Email</strong><br>
+                            <span class="text-light">abdullah@example.com</span>
                         </div>
-                    </div>
 
+                        <div class="info-box mb-4 pb-3 border-bottom">
+                            <strong class="text-success">Telefoon</strong><br>
+                            <span class="text-light">+31 6 12345678</span>
+                        </div>
+
+                        <div class="info-box mb-4 pb-3 border-bottom">
+                            <strong class="text-success">Locatie</strong><br>
+                            <span class="text-light">Nederland</span>
+                        </div>
+
+                        <div class="info-box">
+                            <strong class="text-success">Beschikbaarheid</strong><br>
+                            <span class="text-light">Ik ben beschikbaar voor kleine projecten.</span>
+                            <div class="status mt-2" style="color:#10b981;font-weight:bold;">
+                                ● Beschikbaar voor projecten
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 

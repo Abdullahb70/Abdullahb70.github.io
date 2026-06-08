@@ -13,23 +13,6 @@ a {
     text-decoration: none;
 }
 
-/* -----------------------------------
-   GROENE ACCENTKLEUREN
------------------------------------ */
-/* Groene accentkleuren gebruikt in het ontwerp:
-   - Knop achtergrond: #10b981
-   - Knop hover: #34d399
-   - Logo & links hover: #10b981
-   - Badge tekst: #34d399
-*/
-
-/* -----------------------------------
-   INDEX PAGINA BACKGROUND
------------------------------------ */
-
-/* -----------------------------------
-   NAVBAR
------------------------------------ */
 header, .navbar {
     background: #0f172a;
     border-bottom: 1px solid #1e293b;
@@ -56,21 +39,6 @@ header, .navbar {
     font-weight: 600;
 }
 
-header nav a {
-    color: #cfd5e1;
-    font-weight: 500;
-    transition: .2s;
-}
-
-header nav a:hover {
-    color: #10b981;
-}
-
-header nav .active {
-    color: #10b981;
-    font-weight: 600;
-}
-
 /* -----------------------------------
    TITELS & ONDERLIJN
 ----------------------------------- */
@@ -86,15 +54,6 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------
-   GROENE ACCENTKLEUREN
------------------------------------ */
-/* Groene accentkleuren gebruikt in het ontwerp:
-   - Knop achtergrond: #10b981
-   - Knop hover: #34d399
-   - Logo & links hover: #10b981
-   - Badge tekst: #34d399
-*/
-/* -----------------------------------
    GROENE BUTTONS (UNIVERSEEL)
 ----------------------------------- */
 .btn {
@@ -105,24 +64,6 @@ h1, h2, h3 {
     border: none;
     transition: 0.2s;
     display: inline-block;
-}
-
-.btn-green {
-    background: #10b981;
-    color: #020617;
-}
-
-.btn-green:hover {
-    background: #34d399;
-}
-
-.btn-dark {
-    background: #1e293b;
-    color: #cfd5e1;
-}
-
-.btn-dark:hover {
-    background: #334155;
 }
 
 .primary {
@@ -142,24 +83,25 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.hero-title {
-    font-size: 48px;
-    font-weight: 700;
-    color: #ffffff;
-    animation: fadeIn 1.2s ease-out;
-}
-
-.hero-subtitle {
-    font-size: 18px;
-    color: #d1d5db;
-    margin-top: 10px;
-    animation: fadeIn 1.6s ease-out;
-}
-
 .hero-left h1 {
     font-size: 64px;
     font-weight: 800;
 }
+
+.hero-left h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #cbd5f5;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
 .hero-right {
     display: flex;
     justify-content: center;
@@ -217,45 +159,9 @@ h1, h2, h3 {
     transform: scale(1.2);
 }
 
-
-.hero-left h2 {
-    font-size: 28px;
-    font-weight: 500;
-    color: #cbd5f5;
-    margin-bottom: 20px;
-}
-
-.hero-left p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #d1d5db;
-    margin-bottom: 30px;
-}
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-/* -----------------------------------
-   DRIE LOGO ICONS
------------------------------------ */
-.skills-icons {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 50px;
-}
-
-.skills-icons i {
-    font-size: 60px;
-    color: #10b981;
-    transition: .2s;
-}
-
-.skills-icons i:hover {
-    transform: scale(1.15);
-    color: #34d399;
 }
 
 /* -----------------------------------
