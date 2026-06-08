@@ -16,27 +16,32 @@ a {
 header, .navbar {
     background: #0f172a;
     border-bottom: 1px solid #1e293b;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand, header .logo {
     font-size: 22px;
     font-weight: 700;
     color: #10b981 !important;
+    letter-spacing: 0.5px;
 }
 
 .navbar-nav .nav-link {
     color: #cfd5e1 !important;
     font-weight: 500;
     transition: .2s;
+    font-size: 15px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #10b981 !important;
+    color: #34d399 !important;
 }
 
 .navbar-nav .nav-link.active {
     color: #10b981 !important;
     font-weight: 600;
+    border-bottom: 2px solid #10b981;
+    padding-bottom: 2px;
 }
 
 /* -----------------------------------
@@ -44,6 +49,33 @@ header, .navbar {
 ----------------------------------- */
 h1, h2, h3 {
     color: #10b981;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+.lead {
+    color: #d1d5db;
+    font-weight: 500;
+}
+
+.text-light {
+    color: #e5e7eb !important;
 }
 
 .underline, .lijn {
@@ -163,12 +195,29 @@ h1, h2, h3 {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* -----------------------------------
-   PROJECT CARDS
------------------------------------ */
-.card {
+card-body {
     background: #0f172a;
+}
+
+.card-title {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card-text {
+    color: #d1d5db;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.tags span {
+    background: #1e293b;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #cbd5e1172a;
     border: 1px solid #1e293b;
     border-radius: 16px;
     overflow: hidden;
@@ -240,28 +289,62 @@ h1, h2, h3 {
     border-radius: 10px;
     animation: fill 1.2s ease-out;
 }
-
-@keyframes fill {
-    from { width: 0; }
-    to { width: inherit; }
-}
-
-/* -----------------------------------
-   CONTACT PAGE
------------------------------------ */
-.kaart {
+.card {
     background: #0f172a;
     border: 1px solid #1e293b;
-    border-radius: 16px;
-    padding: 25px;
-    box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+    color: #cfd5e1;
+}
+
+.form-label {
+    color: #e5e7eb;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    background: #1e293b;
+    background: #111a2e;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    color: #e5e7eb;
+    margin-bottom: 15px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #6b7280;
+}
+
+input:focus, textarea:focus {
+    background: #1a2332;
+    border-color: #10b981;
+    color: #e5e7eb;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+    outline: none;
+}
+
+button {
+    background: #10b981;
     border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #020617;
+}
+
+button:hover {
+    background: #34d399;
+}
+
+.info-box {
+    color: #e5e7eb;
+}
+
+.info-box strong {
+    color: #10b981;
+    font-weight: 700
     border-radius: 8px;
     color: #cfd5e1;
     margin-bottom: 15px;
