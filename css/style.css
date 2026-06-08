@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #0b1120;
+    background: radial-gradient(circle at right, #0f766e, #020617 70%);
     font-family: Arial, sans-serif;
     color: #cfd5e1;
 }
@@ -14,24 +14,46 @@ a {
 }
 
 /* -----------------------------------
+   GROENE ACCENTKLEUREN
+----------------------------------- */
+/* Groene accentkleuren gebruikt in het ontwerp:
+   - Knop achtergrond: #10b981
+   - Knop hover: #34d399
+   - Logo & links hover: #10b981
+   - Badge tekst: #34d399
+*/
+
+/* -----------------------------------
    INDEX PAGINA BACKGROUND
 ----------------------------------- */
-.index-bg {
-    background: radial-gradient(circle at right, #0f766e, #020617 70%);
-}
 
 /* -----------------------------------
    NAVBAR
 ----------------------------------- */
-header {
+header, .navbar {
     background: #0f172a;
     border-bottom: 1px solid #1e293b;
 }
 
-header .logo {
+.navbar-brand, header .logo {
     font-size: 22px;
     font-weight: 700;
-    color: #10b981;
+    color: #10b981 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #cfd5e1 !important;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #10b981 !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #10b981 !important;
+    font-weight: 600;
 }
 
 header nav a {
@@ -64,6 +86,15 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------
+   GROENE ACCENTKLEUREN
+----------------------------------- */
+/* Groene accentkleuren gebruikt in het ontwerp:
+   - Knop achtergrond: #10b981
+   - Knop hover: #34d399
+   - Logo & links hover: #10b981
+   - Badge tekst: #34d399
+*/
+/* -----------------------------------
    GROENE BUTTONS (UNIVERSEEL)
 ----------------------------------- */
 .btn {
@@ -94,6 +125,15 @@ h1, h2, h3 {
     background: #334155;
 }
 
+.primary {
+    background: #10b981;
+    color: #020617;
+}
+
+.primary:hover {
+    background: #34d399;
+}
+
 /* -----------------------------------
    HERO SECTIE (INDEX)
 ----------------------------------- */
@@ -114,6 +154,82 @@ h1, h2, h3 {
     color: #d1d5db;
     margin-top: 10px;
     animation: fadeIn 1.6s ease-out;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.2);
+}
+
+.code-card img {
+    width: 100%;
+    display: block;
+}
+
+.tag {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #10b981;
+}
+
+.tag.top {
+    top: 15px;
+    left: 15px;
+}
+
+.tag.bottom {
+    bottom: 15px;
+    right: 15px;
+}
+
+.badge {
+    background: #10b981 !important;
+    color: #020617 !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+}
+
+.socials {
+    font-size: 24px;
+}
+
+.socials a {
+    color: #10b981;
+    transition: .2s;
+}
+
+.socials a:hover {
+    color: #34d399;
+    transform: scale(1.2);
+}
+
+
+.hero-left h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #cbd5f5;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #d1d5db;
+    margin-bottom: 30px;
 }
 
 @keyframes fadeIn {

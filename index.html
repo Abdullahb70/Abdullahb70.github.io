@@ -17,33 +17,62 @@
 <body>
 
 <!-- NAVBAR -->
-<header class="py-3 px-5 d-flex justify-content-between align-items-center">
-    <div class="logo">Abdullah Boukich</div>
-
-    <nav class="d-flex gap-4">
-        <a class="active" href="index.html">Home</a>
-        <a href="overmij.html">Over mij</a>
-        <a href="projecten.html">Projecten</a>
-        <a href="skills.html">Vaardigheden</a>
-        <a href="contact.html">Contact</a>
+<header class="navbar sticky-top">
+    <nav class="navbar-expand-lg w-100">
+        <div class="container-fluid px-5">
+            <div class="navbar-brand logo">Abdullah Boukich</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto gap-4">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link" href="aboutme.html">Over mij</a>
+                    <a class="nav-link" href="projecten.html">Projecten</a>
+                    <a class="nav-link" href="skills.html">Vaardigheden</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>
 
 <!-- HERO -->
-<section class="hero text-center">
-    <h1 class="hero-title">Welkom, ik ben Abdullah</h1>
-    <p class="hero-subtitle">Frontend Developer in opleiding — met passie voor webdesign</p>
+<section class="hero">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- HERO LEFT -->
+            <div class="col-lg-6 hero-left">
+                <span class="badge bg-primary mb-3">Welkom op mijn portfolio</span>
+                <h1 class="mb-3">Abdullah Boukich</h1>
+                <h2 class="mb-4">Junior Web Developer</h2>
 
-    <div class="mt-4">
-        <a href="projecten.html" class="btn green">Bekijk mijn projecten</a>
-        <a href="contact.html" class="btn dark">Neem contact op</a>
-    </div>
+                <p class="lead mb-4">
+                    Ik ben een beginnende developer die websites en games
+                    maakt met HTML, CSS en JavaScript. Ik leer elke dag nieuwe dingen!
+                </p>
 
-    <!-- ICONS -->
-    <div class="skills-icons">
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-        <i class="fa-brands fa-js"></i>
+                <div class="buttons mb-4">
+                    <a href="projecten.html" class="btn btn-primary primary me-3">Bekijk mijn projecten</a>
+                    <a href="contact.html" class="btn btn-outline-light">Contact</a>
+                </div>
+
+                <div class="socials">
+                    <a href="#" class="me-3"><i class="fab fa-github"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- HERO RIGHT -->
+            <div class="col-lg-6 hero-right">
+                <div class="code-card position-relative">
+                    <img src="img/home.png" alt="portfolio" class="img-fluid rounded">
+                    <span class="tag top position-absolute"></span>
+                    <span class="tag bottom position-absolute"></span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -53,5 +82,6 @@
     <p class="small">Gemaakt met door Abdullah Boukich</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
