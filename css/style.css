@@ -14,6 +14,13 @@ a {
 }
 
 /* -----------------------------------
+   INDEX PAGINA BACKGROUND
+----------------------------------- */
+.index-bg {
+    background: radial-gradient(circle at right, #0f766e, #020617 70%);
+}
+
+/* -----------------------------------
    NAVBAR
 ----------------------------------- */
 header {
@@ -57,33 +64,82 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------
-   BUTTONS
+   GROENE BUTTONS (UNIVERSEEL)
 ----------------------------------- */
 .btn {
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+    border: none;
+    transition: 0.2s;
     display: inline-block;
-    text-align: center;
 }
 
-.btn.green {
+.btn-green {
     background: #10b981;
-    color: #0b1120;
+    color: #020617;
 }
 
-.btn.green:hover {
+.btn-green:hover {
     background: #34d399;
 }
 
-.btn.dark {
+.btn-dark {
     background: #1e293b;
     color: #cfd5e1;
 }
 
-.btn.dark:hover {
+.btn-dark:hover {
     background: #334155;
+}
+
+/* -----------------------------------
+   HERO SECTIE (INDEX)
+----------------------------------- */
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #d1d5db;
+    margin-top: 10px;
+    animation: fadeIn 1.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -----------------------------------
+   DRIE LOGO ICONS
+----------------------------------- */
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.skills-icons i {
+    font-size: 60px;
+    color: #10b981;
+    transition: .2s;
+}
+
+.skills-icons i:hover {
+    transform: scale(1.15);
+    color: #34d399;
 }
 
 /* -----------------------------------
