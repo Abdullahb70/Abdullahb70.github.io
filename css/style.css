@@ -219,16 +219,16 @@ p {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-card-body {
-    background: #0f172a;
-}ffffff;
-    font-size: 15px;
+/* card-body { */
+    /* background: #0f172a; */
+/* }ffffff; */
+    /* font-size: 15px;
     line-height: 1.6;
     font-weight: 400
     color: #10b981;
     font-weight: 700;
     font-size: 18px;
-}
+} */
 
 .card-text {
     color: #d1d5db;
