@@ -255,6 +255,12 @@ p {
     display: block;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
 .card .content {
     padding: 20px;
 }
