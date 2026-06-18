@@ -426,3 +426,15 @@ button:hover {
 .contact-box p {
     color: #cfd5e1;
 }
+
+.btn.primary {
+    background-color: #10b981 !important;
+    border-color: #10b981 !important;
+    color: #020617 !important;
+}
+
+.btn.primary:hover {
+    background-color: #34d399 !important;
+    border-color: #34d399 !important;
+    color: #020617 !important;
+}  
